@@ -21,6 +21,9 @@ class Board {
                   canMerge: false,
                 )));
     score = 0;
+    resetCamMerge();
+    randomEmptyTile();
+    randomEmptyTile();
   }
 
   Tile getTile(int r, int c) => _tiles[r][c];
