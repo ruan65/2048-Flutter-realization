@@ -5,11 +5,11 @@ class Board {
   final int column;
   int score;
 
-  Board(this.row, this.column);
+  Board({this.row = 4, this.column = 4});
 
   List<List<Tile>> _tiles;
 
-  void initTiles() {
+  void initBoard() {
     _tiles = List.generate(
         4,
         (row) => List.generate(
