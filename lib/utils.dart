@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-final Map<int, Color> colors = {
+final Map<int, Color> tileColors = {
   2: Colors.orange[50],
   4: Colors.orange[100],
   8: Colors.orange[200],
