@@ -10,8 +10,10 @@ class BoardWidget extends StatefulWidget {
 class BoardWidgetState extends State<BoardWidget> {
 
   Board _board = Board();
+  int row = 4;
+  int column = 4;
   bool _isMoving = false;
-  bool _gameOver = false;
+  bool gameOver = false;
   MediaQueryData _mediaQueryData;
 
   double tilePadding = 5.0;
@@ -24,7 +26,6 @@ class BoardWidgetState extends State<BoardWidget> {
 
   newGame() {
     setState(() {
-      _gameOver = false;
       _board.initBoard();
     });
   }
