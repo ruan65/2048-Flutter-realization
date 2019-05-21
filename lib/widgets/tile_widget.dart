@@ -8,7 +8,7 @@ class TileWidget extends StatefulWidget {
   Tile tile;
   BoardWidgetState boardWidgetState;
 
-  TileWidget({Key key}) : super(key: key);
+  TileWidget({this.tile, this.boardWidgetState, key}) : super(key: key);
 
   _TileWidgetState createState() => _TileWidgetState();
 }
